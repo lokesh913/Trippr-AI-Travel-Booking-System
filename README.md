@@ -15,6 +15,15 @@ pinned: false
 [![LangGraph](https://img.shields.io/badge/Orchestrator-LangGraph-2C3E50?style=for-the-badge&logo=python)](https://github.com/langchain-ai/langgraph)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
+---
+
+### 🌟 Live Production Links (Recruiter Quick-Access)
+> **🌐 Live Web Application (Frontend)**: [https://trippr-ai-travel-booking-system.vercel.app/](https://trippr-ai-travel-booking-system.vercel.app/)  
+> **⚙️ Asynchronous FastAPI Backend API**: [https://lchavan01-trippr-ai.hf.space](https://lchavan01-trippr-ai.hf.space)  
+> **📑 Swagger API Documentation**: [https://lchavan01-trippr-ai.hf.space/docs](https://lchavan01-trippr-ai.hf.space/docs)  
+
+---
+
 **Trippr AI: Multi-Agent Travel Orchestrator** is a state-of-the-art, real-world multi-agent booking system designed to orchestrate complex travel workflows. Built on a sophisticated asynchronous **LangGraph** architecture, it collaborates in real-time across four specialized AI agents to plan, search, optimize, and deliver tailor-made, download-ready travel plans.
 
 The system is split into an elegant, sky-themed **Next.js 14** web application and a streaming-native **FastAPI** backend bridge that interfaces directly with database persistent layers and real-time live travel web tools.
