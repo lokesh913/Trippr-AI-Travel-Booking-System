@@ -216,3 +216,14 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# 📦 Node & Next.js frontend folders
+node_modules/
+.next/
+out/
+frontend-nextjs/node_modules/
+frontend-nextjs/.next/
+frontend-nextjs/out/
+
+# 🐍 Project-specific Python Virtual Environments
+langgraph_virtual_ENV3/

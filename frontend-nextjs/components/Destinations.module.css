@@ -1,0 +1,156 @@
+/* ══════════════════════════════════════════════════════════════════════════════
+   Popular Destinations — Horizontal scrollable card row
+   ══════════════════════════════════════════════════════════════════════════════ */
+
+.section {
+  padding: var(--space-20) 0;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: var(--space-6);
+  padding-right: var(--space-6);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: var(--text-4xl);
+  font-weight: 700;
+  color: var(--text-primary);
+  text-align: center;
+  margin-bottom: var(--space-4);
+}
+
+.subtitle {
+  font-size: var(--text-lg);
+  color: var(--text-secondary);
+  text-align: center;
+  max-width: 480px;
+  margin: 0 auto var(--space-12);
+}
+
+/* ── Scroll container ──────────────────────────────────────────────────────── */
+.scrollContainer {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--bg-tertiary) transparent;
+  padding-bottom: var(--space-4);
+}
+
+.scrollContainer::-webkit-scrollbar {
+  height: 6px;
+}
+
+.scrollContainer::-webkit-scrollbar-thumb {
+  background: var(--bg-tertiary);
+  border-radius: 3px;
+}
+
+.cardRow {
+  display: flex;
+  gap: var(--space-5);
+  min-width: max-content;
+  padding: var(--space-2);
+}
+
+/* ── Card ──────────────────────────────────────────────────────────────────── */
+.card {
+  position: relative;
+  width: 220px;
+  height: 280px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid var(--border-subtle);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  flex-shrink: 0;
+  background: none;
+  padding: 0;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  border-color: var(--border-active);
+  box-shadow: 0 8px 32px rgba(59, 130, 246, 0.2);
+}
+
+/* ── Image ─────────────────────────────────────────────────────────────────── */
+.imageWrapper {
+  position: absolute;
+  inset: 0;
+}
+
+.image {
+  object-fit: cover;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  filter: brightness(0.9);
+}
+
+.card:hover .image {
+  filter: brightness(1);
+  transform: scale(1.08);
+}
+
+/* ── Overlay gradient ──────────────────────────────────────────────────────── */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(240, 246, 255, 0.95) 0%,
+    rgba(240, 246, 255, 0.35) 50%,
+    transparent 100%
+  );
+  transition: background 0.4s ease;
+}
+
+.card:hover .overlay {
+  background: linear-gradient(
+    to top,
+    rgba(224, 238, 251, 0.98) 0%,
+    rgba(224, 238, 251, 0.45) 50%,
+    transparent 100%
+  );
+}
+
+/* ── Content ───────────────────────────────────────────────────────────────── */
+.cardContent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--space-5);
+  z-index: 1;
+  text-align: left;
+}
+
+.flag {
+  font-size: var(--text-2xl);
+  display: block;
+  margin-bottom: var(--space-2);
+}
+
+.cityName {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--space-1);
+}
+
+.countryName {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+
+/* ── Responsive ────────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .card {
+    width: 200px;
+    height: 260px;
+  }
+
+  .title {
+    font-size: var(--text-2xl);
+  }
+}

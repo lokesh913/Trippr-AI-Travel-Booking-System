@@ -1,0 +1,108 @@
+/* ══════════════════════════════════════════════════════════════════════════════
+   Travel Plan — Final rendered plan output
+   ══════════════════════════════════════════════════════════════════════════════ */
+
+.section {
+  padding: var(--space-12) 0 var(--space-20);
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--text-primary);
+  text-align: center;
+  margin-bottom: var(--space-8);
+}
+
+/* ── Plan card ─────────────────────────────────────────────────────────────── */
+.planCard {
+  background: var(--gradient-card);
+  border: 1px solid var(--border-subtle);
+  border-left: 4px solid;
+  border-image: var(--gradient-accent) 1;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.planContent {
+  padding: var(--space-8);
+  line-height: 1.8;
+}
+
+/* ── Action bar ────────────────────────────────────────────────────────────── */
+.actionBar {
+  display: flex;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
+  flex-wrap: wrap;
+}
+
+.actionBtn {
+  flex: 1;
+  min-width: 180px;
+  padding: var(--space-4) var(--space-5);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.actionBtn:hover {
+  background: var(--bg-tertiary);
+  border-color: var(--border-active);
+  color: var(--text-primary);
+  transform: translateY(-2px);
+}
+
+.actionBtn:active {
+  transform: translateY(0);
+}
+
+.actionBtnSuccess {
+  border-color: var(--accent-emerald);
+  color: var(--accent-emerald);
+  background: rgba(16, 185, 129, 0.08);
+}
+
+.actionBtnPrimary {
+  background: var(--gradient-accent);
+  color: #ffffff;
+  border: none;
+}
+
+.actionBtnPrimary:hover {
+  box-shadow: 0 4px 20px rgba(59, 130, 246, 0.3);
+  color: #ffffff;
+}
+
+/* ── Responsive ────────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .planContent {
+    padding: var(--space-5);
+  }
+
+  .actionBar {
+    flex-direction: column;
+  }
+
+  .actionBtn {
+    min-width: auto;
+  }
+}
+
+.printHeader {
+  display: none;
+}

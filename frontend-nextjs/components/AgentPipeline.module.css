@@ -1,0 +1,42 @@
+/* ══════════════════════════════════════════════════════════════════════════════
+   Agent Pipeline — Live View Container
+   ══════════════════════════════════════════════════════════════════════════════ */
+
+.section {
+  padding: var(--space-16) 0;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--text-primary);
+  text-align: center;
+  margin-bottom: var(--space-8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+}
+
+.workingIcon {
+  animation: float 2s ease-in-out infinite;
+  display: inline-block;
+}
+
+.completeIcon {
+  animation: fadeIn 0.5s ease;
+}
+
+.cardStack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}

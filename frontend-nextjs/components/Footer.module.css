@@ -1,0 +1,84 @@
+/* ══════════════════════════════════════════════════════════════════════════════
+   Footer
+   ══════════════════════════════════════════════════════════════════════════════ */
+
+.footer {
+  border-top: 1px solid var(--border-subtle);
+  padding: var(--space-12) 0 var(--space-8);
+  background: var(--bg-secondary);
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-6);
+}
+
+/* ── Brand ─────────────────────────────────────────────────────────────────── */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.plane {
+  font-size: var(--text-2xl);
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Tech badges ───────────────────────────────────────────────────────────── */
+.techRow {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.techBadge {
+  padding: var(--space-2) var(--space-4);
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-subtle);
+  border-radius: 999px;
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: all 0.3s ease;
+}
+
+.techBadge:hover {
+  border-color: var(--border-active);
+  color: var(--sky-600);
+  background: rgba(59, 130, 246, 0.08);
+}
+
+/* ── Copyright ─────────────────────────────────────────────────────────────── */
+.copyright {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+}
+
+/* ── Responsive ────────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .techRow {
+    gap: var(--space-2);
+  }
+
+  .techBadge {
+    font-size: 0.7rem;
+    padding: var(--space-1) var(--space-3);
+  }
+}

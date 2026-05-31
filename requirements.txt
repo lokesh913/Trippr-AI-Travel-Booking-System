@@ -1,0 +1,15 @@
+langgraph
+langchain
+langchain-core
+langchain-openai
+langchain-groq
+langchain-community
+langgraph-checkpoint-mysql[pymysql]
+pymysql
+cryptography
+python-dotenv
+tavily-python
+requests
+fastapi
+uvicorn[standard]
+sse-starlette
