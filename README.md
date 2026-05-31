@@ -1,3 +1,13 @@
+---
+title: Trippr AI Travel Booking System
+emoji: ✈️
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # ✈️ Trippr AI: Multi-Agent Travel Orchestrator
 
 [![Next.js](https://img.shields.io/badge/Frontend-Next.js%2014-000000?style=for-the-badge&logo=nextdotjs)](https://nextjs.org/)
